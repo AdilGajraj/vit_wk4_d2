@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+  display: flex;
+  text-align: center;
+  border-color: blueviolet;
+  justify-content: center;
+}
+#cssfix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: fit-content;
+}
+.error {
+  color: red;
+  visibility: hidden;
+}
+.header {
+  background-color: beige;
+  text-align: center;
+  font-size: 20px;
+  border: salmon;
+}
+.title {
+  width: 100%;
+  text-align: center;
+}
+#grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "left left left left left left"
+    "right right right right right right"
+    "footer footer footer footer footer footer";
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.topnav {
+  background-color: rgb(173, 91, 91);
+  overflow: hidden;
+  text-align: center;
+}
+.topnav:hover {
+  background-color: aqua;
+  color: blue;
+}
+#footer {
+  text-align: center;
+  border: rgb(153, 77, 77);
+  padding: 10px;
+}
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+body {
+  background-color: gray;
+}
+#currentTime {
+  font-size: 48px;
+  text-align: center;
+  font-family: "Tangerine", serif;
+  font-weight: 300;
+  color: black;
+  margin: 20px auto;
+}
+
+.columnContainer {
+  display: flex;
+}
+
+.column {
+  width: 33%;
+}
+img {
+  width: 600px;
+  height: 350px;
+}

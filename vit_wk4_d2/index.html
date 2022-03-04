@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js/"></script>
+    <title>Adil's Logistics</title>
+  </head>
+  <body onload="tiktok()">
+    <div id="clock"></div>
+
+    <script>
+      function tiktok() {
+        const today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("clock").innerText = h + ":" + m + ":" + s;
+        setTimeout(tiktok, 1000);
+      }
+
+      function checkTime(i) {
+        if (i < 10) return "0" + i;
+        return i;
+      }
+    </script>
+    <div id="cssfix"><h2>Adil's Logistics Solution</h2></div>
+    <div class="grid-container">
+      <div class="header">
+        <h2>Logistics Solutions for the Future</h2>
+        <div class="nav_menu">
+          <a href="#">About</a>
+          <a href="https://www.linkedin.com/in/adilgajraj/">Contact</a>
+          <a href="#">Help</a>
+        </div>
+        <br />
+        <form>
+          <p id="error">Please enter correct email and password!</p>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="emailInput" />
+          <label for="password">Password:</label>
+          <input type="text" name="password" id="passwordInput" />
+          <input type="button" value="Login" onclick="login()" />
+        </form>
+      </div>
+      <div class="row">
+        <div class="columnContainer">
+          <div class="column" style="background-color: lightgreen">
+            <h1>Ground</h1>
+            <img
+              src="https://www.tecequipment.com/app/uploads/2020/10/Volvo-Semi-Truck-900x436.jpg"
+            />
+            <p>
+              Adil's Logistics Solutions have the market cornered when it comes
+              to ground Logistics. We have over 2000 trucks in North America and
+              have contracts with ground shipping in every industrialized and
+              many least industrialized countries in the world. Whatever your
+              needs are, we are your solution.
+            </p>
+          </div>
+
+          <div class="column" style="background-color: lightgray">
+            <h1>Air</h1>
+            <img
+              src="https://5.imimg.com/data5/BY/LG/MY-3971970/international-air-cargo-services-500x500.jpg"
+            />
+            <p>
+              We have the most cargo distributed via air than any other major
+              competitors. Our products make it to their destination on time,
+              all of the time. Our guarantee is that if your products does not
+              reach its destination by the agreed upon time, the next time is
+              free of charge! No one else in the market dare to make that
+              guarantee. We do it because we are the best.
+            </p>
+          </div>
+
+          <div class="column" style="background-color: lightskyblue">
+            <h1>Sea</h1>
+            <img
+              src="https://splash247.com/wp-content/uploads/2015/03/Maersk-EEE-Containership-e1606114954243-780x470.jpg"
+            />
+            <p>
+              Over 70 percent of World's trade is conducted via the Ocean and we
+              deliver everytime. With your products in our hands, you don't have
+              to worry about sleepless nights. We have Radio Frequency
+              Identification Trackers so that you can have peace of mind to see
+              where your products is currently located. Just log into your
+              account on our website and it is that easy! We have the largest
+              contract with all the main shipping lines, so you never have to
+              worry about your products staying on the docks waiting for a
+              carrier.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">Created by Adil's Logistics Solutions</div>
+  </body>
+</html>
